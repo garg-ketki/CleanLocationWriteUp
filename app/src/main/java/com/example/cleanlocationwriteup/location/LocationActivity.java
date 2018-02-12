@@ -1,4 +1,4 @@
-package com.example.cleanlocationwriteup;
+package com.example.cleanlocationwriteup.location;
 
 import android.Manifest;
 import android.arch.lifecycle.ViewModelProviders;
@@ -12,8 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.cleanlocationwriteup.location.LocationDataManager;
-import com.example.cleanlocationwriteup.location.LocationViewModel;
+import com.example.cleanlocationwriteup.R;
 import com.tbruyelle.rxpermissions.RxPermissions;
 
 public class LocationActivity extends AppCompatActivity {
