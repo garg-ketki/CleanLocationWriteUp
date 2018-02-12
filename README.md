@@ -1,5 +1,3 @@
 # CleanLocationWriteUp
-Activity loosen from the load of LocationListeners.
-Runtime permission not added. Please switch on the permission manually.
-ViewModel is not tied to Activity context.
-LocationManager is acting as LifecycleObserver.
+1. Activity loosen from the load of LocationListeners.
+2. LocationManager is acting as LifecycleObserver.
