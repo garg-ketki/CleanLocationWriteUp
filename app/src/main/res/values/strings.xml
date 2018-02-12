@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CleanLocationWriteUp</string>
+    <string name="runtime_permissions_txt">Please provide location access to proceed further</string>
 </resources>

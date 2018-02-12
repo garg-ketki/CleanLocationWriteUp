@@ -1,4 +1,4 @@
-package com.example.cleanlocationwriteup;
+package com.example.cleanlocationwriteup.location;
 
 import android.annotation.SuppressLint;
 import android.arch.lifecycle.Lifecycle;
@@ -26,10 +26,15 @@ import com.google.android.gms.location.LocationServices;
 
 public class LocationDataManager {
   private static final String TAG = LocationDataManager.class.getSimpleName();
+  private static BoundedLocationListener boundedLocationListener;
 
   public static void bindLocationListenerIn(LocationViewModel model, LifecycleOwner lifecycleOwner,
                                             Context context) {
-    new BoundedLocationListener(model, lifecycleOwner, context);
+    if (boundedLocationListener == null) {
+      boundedLocationListener = new BoundedLocationListener(model, lifecycleOwner, context);
+    } else {
+      boundedLocationListener.connectLocationService();
+    }
   }
 
   @SuppressLint("MissingPermission")

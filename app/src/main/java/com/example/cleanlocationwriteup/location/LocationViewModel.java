@@ -1,4 +1,4 @@
-package com.example.cleanlocationwriteup;
+package com.example.cleanlocationwriteup.location;
 
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
